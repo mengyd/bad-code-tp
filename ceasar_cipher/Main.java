@@ -13,7 +13,7 @@ public class Main {
      * is replaced by a letter shifted by the provided key. Shifting the other way with
      * the same key decrypt the encrypted message
      */
-    public static class CeasarCipher implements ICipher {
+    public static class CaesarCipher implements ICipher {
 
         public String encrypt(String toEncrypt, String key) {
             // Get the real key
@@ -46,13 +46,13 @@ public class Main {
             if(args.length < 3)
                 System.out.println("Usage : encrypt|decrypt message key");
             else
-                System.out.println(new CeasarCipher().encrypt(args[1], args[2]));
+                System.out.println(new CaesarCipher().encrypt(args[1], args[2]));
             System.exit(0);
         } else if(args[0].equals("decrypt")) {
             if(args.length < 3)
                 System.out.println("Usage : encrypt|decrypt message key");
             else
-                System.out.println(new CeasarCipher().decrypt(args[1], args[2]));
+                System.out.println(new CaesarCipher().decrypt(args[1], args[2]));
             System.exit(0);
         } else if(args[0].equals("help")) {
             System.out.println("Usage : encrypt|decrypt message key");
