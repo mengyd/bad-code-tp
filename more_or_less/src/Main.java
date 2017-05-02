@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main {//test fork
 
     public static void play(int max) {
         Scanner input = new Scanner(System.in);
