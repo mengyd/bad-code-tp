@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {//test fork
+public class Main {
 
     public static void play(int max) {
         Scanner input = new Scanner(System.in);
@@ -10,12 +10,11 @@ public class Main {//test fork
             int number;
             int maxGuess;
             int minGuess;
+            boolean found = false;
 
             maxGuess = max;
             number = (int)(Math.random() * max + 1);
             minGuess = 0;
-
-            boolean found = false;
 
             while(!found) {
                 int guess = -1;
